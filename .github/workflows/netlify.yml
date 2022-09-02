@@ -1,0 +1,13 @@
+name: 'Production in Netlify'
+
+on: push
+  branches:
+    - production
+name: Publish in Netlify if changed
+jobs:
+  build:
+    name: Request Netlify Webhook
+    runs-on: ubuntu-latest
+    steps:
+      - name: Curl request
+        run: curl -X POST -d {} https://api.netlify.com/build_hooks/6312397510af680812947a54
