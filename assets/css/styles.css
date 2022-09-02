@@ -1,16 +1,8 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-/*=============== VARIABLES CSS ===============*/
+/*=============== CSS VARIABLES  ===============*/
 :root {
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  /*
-      Blue: hsl(207, 90%, 61%)
-      Purple: hsl(250, 66%, 75%)
-      Pink: hsl(356, 66%, 75%)
-      Teal: hsl(174, 63%, 62%)
-  */
 
   --hue: 207;
   --sat: 90%;
@@ -56,7 +48,7 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: .3s; /* For animation dark mode */
+  transition: .3s; /* For dark mode animation */
 }
 
 h1, h2, h3 {
@@ -102,7 +94,7 @@ body.dark-theme {
 
 /*========== 
     Color changes in some parts of 
-    the website, in light theme
+    the website in light theme
 ==========*/
 .dark-theme .button__gray {
   background-color: var(--container-color);
@@ -360,7 +352,6 @@ body.dark-theme {
 }
 
 /*=============== DESCRIPTION ===============*/
-
 .description__content {
     display: flex;
     justify-content: center;
@@ -414,7 +405,7 @@ body.dark-theme {
   font-size: var(--smaller-font-size);
 }
 
-/* Hide and show projects & skills */
+/* Hide and show projects, description & skills */
 .filters [data-content] {
   display: none;
 }
