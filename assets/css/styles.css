@@ -359,6 +359,18 @@ body.dark-theme {
   bottom: 0;
 }
 
+/*=============== DESCRIPTION ===============*/
+
+.description__content {
+    display: flex;
+    justify-content: center;
+    margin: 0 7%;
+}
+
+.description__text {
+    text-align: center;
+}
+
 /*=============== SKILLS ===============*/
 .skills__content {
   row-gap: 3.5rem;
